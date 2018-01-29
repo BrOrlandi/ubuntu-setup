@@ -14,6 +14,10 @@ sudo update-alternatives --config gdm3.css
 
 sudo apt install -y build-essential curl gnome-tweak-tool
 
+# config git
+
+git config --global user.email "brorlandi@gmail.com"
+git config --global user.name "BrOrlandi"
 
 # Remove Amazon
 sudo rm /usr/share/applications/ubuntu-amazon-default.desktop

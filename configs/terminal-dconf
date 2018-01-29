@@ -1,0 +1,40 @@
+[keybindings]
+new-window='<Primary>n'
+close-tab='<Primary>w'
+new-tab='<Primary>t'
+
+[profiles:]
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', '767b8e53-4781-47d8-bad8-6cbdeacd4aa5']
+
+[profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+foreground-color='rgb(255,255,255)'
+visible-name='Black'
+custom-command='fish'
+default-size-rows=43
+default-size-columns=150
+scroll-on-output=false
+use-custom-command=false
+use-theme-colors=false
+use-transparent-background=true
+use-theme-transparency=false
+scrollback-unlimited=false
+background-color='rgb(0,0,0)'
+background-transparency-percent=21
+
+[profiles:/:767b8e53-4781-47d8-bad8-6cbdeacd4aa5]
+foreground-color='rgb(255,255,255)'
+visible-name='Apresentacao'
+custom-command='fish'
+scroll-on-output=false
+use-custom-command=false
+use-theme-colors=false
+use-system-font=false
+use-transparent-background=true
+font='Monospace 19'
+use-theme-transparency=false
+scrollback-unlimited=false
+background-color='rgb(0,0,0)'
+background-transparency-percent=21
+
+[/]
+schema-version=uint32 3

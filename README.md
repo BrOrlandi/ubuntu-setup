@@ -17,3 +17,7 @@ chmod +x ./setup-repo.sh
 ## GNOME Shell default theme
 
 http://www.omgubuntu.co.uk/2017/10/install-vanilla-gnome-shell-ubuntu-17-10
+
+## Disable ATI Radeon GPU
+
+https://askubuntu.com/questions/771562/16-04-power-off-discrete-graphics-ati-amd

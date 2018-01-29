@@ -25,3 +25,5 @@ sudo rm /usr/share/applications/ubuntu-amazon-default.desktop
 # Import Terminal config
 # export config: dconf dump /org/gnome/terminal/legacy/ > ./configs/terminal-dconf
 dconf load /org/gnome/terminal/legacy/ < ./configs/terminal-dconf
+# gedit config
+dconf load /org/gnome/gedit/preferences/editor/ < ./configs/gedit-dconf

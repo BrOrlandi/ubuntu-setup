@@ -1,0 +1,11 @@
+[/]
+highlight-current-line=true
+display-overview-map=true
+bracket-matching=true
+scheme='oblivion'
+tabs-size=uint32 2
+display-line-numbers=true
+insert-spaces=true
+background-pattern='none'
+wrap-last-split-mode='word'
+auto-indent=true

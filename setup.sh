@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo apt install -y build-essential curl gnome-tweak-tool
+./gnome-setup.sh
+./install-packages.sh

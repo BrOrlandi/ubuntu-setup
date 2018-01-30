@@ -65,4 +65,29 @@ sudo apt update
 sudo apt -y install spotify-client
 
 
+# VS Code
 
+
+# VS Code Extensions
+
+code --install-extension EditorConfig.EditorConfig
+code --install-extension Orta.vscode-jest
+code --install-extension PeterJausovec.vscode-docker
+code --install-extension Shan.code-settings-sync
+code --install-extension christian-kohler.npm-intellisense
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension felipe.nasc-touchbar
+code --install-extension ginfuru.ginfuru-vscode-jekyll-syntax
+code --install-extension ginfuru.vscode-jekyll-snippets
+code --install-extension glen-84.sass-lint
+code --install-extension killalau.vscode-liquid-snippets
+code --install-extension mdickin.markdown-shortcuts
+code --install-extension neilding.language-liquid
+code --install-extension robinbentley.sass-indented
+code --install-extension ryanluker.vscode-coverage-gutters
+code --install-extension shardulm94.trailing-spaces
+code --install-extension stevejpurves.cucumber
+code --install-extension sysoev.language-stylus
+code --install-extension xabikos.JavaScriptSnippets
+code --install-extension xabikos.ReactSnippets

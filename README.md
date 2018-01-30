@@ -8,7 +8,7 @@ ssh-keygen -y -t rsa -N "" -b 4096 -f ~/.ssh/id_rsa -C "brorlandi@gmail.com"
 ## Downloading and running.
 
 ```
-wget -O setup-repo.sh https://raw.githubusercontent.com/BrOrlandi/ubuntu-setup/master/setup-repo.sh?token=ABhVIrZ-JlsaPJ7WHSy6OijTRGY1XrDCks5aeK2_wA%3D%3D
+wget https://raw.githubusercontent.com/BrOrlandi/ubuntu-setup/master/setup-repo.sh
 
 chmod +x ./setup-repo.sh
 ./setup-repo.sh

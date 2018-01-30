@@ -68,6 +68,11 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
+# Yarn repo
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+
+
 # APT UPDATE
 
 sudo apt update
@@ -104,4 +109,8 @@ code --install-extension xabikos.ReactSnippets
 
 # configure LM Sensors
 sudo sensors-detect
+
+
+# NVM install node, with zsh plugin
+./node.sh
 

@@ -15,7 +15,7 @@ sudo update-alternatives --config gdm3.css
 sudo apt install -y build-essential curl gnome-tweak-tool vim
 
 # config git
-
+git --version
 git config --global user.email "brorlandi@gmail.com"
 git config --global user.name "BrOrlandi"
 
@@ -47,12 +47,22 @@ sudo update-grub
 # GNOME Extensions
 sudo apt-get install chrome-gnome-shell
 
-./gnome-extension-install install alternate-tab@gnome-shell-extensions.gcampax.github.com
-./gnome-extension-install install apps-menu@gnome-shell-extensions.gcampax.github.com
-./gnome-extension-install install auto-move-windows@gnome-shell-extensions.gcampax.github.com
-./gnome-extension-install install desktop-scroller@brorlandi
-./gnome-extension-install install freon@UshakovVasilii_Github.yahoo.com
-./gnome-extension-install install mediaplayer@patapon.info
-./gnome-extension-install install native-window-placement@gnome-shell-extensions.gcampax.github.com
-./gnome-extension-install install screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
-./gnome-extension-install install topIcons@adel.gadllah@gmail.com
+./gnome-extension-install.sh install apps-menu@gnome-shell-extensions.gcampax.github.com
+./gnome-extension-install.sh install auto-move-windows@gnome-shell-extensions.gcampax.github.com
+./gnome-extension-install.sh install desktop-scroller@brorlandi
+./gnome-extension-install.sh install freon@UshakovVasilii_Github.yahoo.com
+./gnome-extension-install.sh install mediaplayer@patapon.info
+./gnome-extension-install.sh install native-window-placement@gnome-shell-extensions.gcampax.github.com
+./gnome-extension-install.sh install screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
+./gnome-extension-install.sh install topIcons@adel.gadllah@gmail.com
+echo "Logout and login again to reload GNOME Shell with Extensions"
+
+
+# Spotify
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt update
+sudo apt -y install spotify-client
+
+
+

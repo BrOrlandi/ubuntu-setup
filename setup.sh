@@ -12,7 +12,7 @@ sudo update-alternatives --config gdm3.css
 
 # Install softwares
 
-sudo apt install -y build-essential curl gnome-tweak-tool vim
+sudo apt install -y build-essential curl gnome-tweak-tool vim lm_sensors
 
 # config git
 git --version
@@ -67,7 +67,7 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
-# APT UPDATE 
+# APT UPDATE
 
 sudo apt update
 
@@ -100,3 +100,7 @@ code --install-extension stevejpurves.cucumber
 code --install-extension sysoev.language-stylus
 code --install-extension xabikos.JavaScriptSnippets
 code --install-extension xabikos.ReactSnippets
+
+# configure LM Sensors
+sudo sensors-detect
+

@@ -40,12 +40,19 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 DIR=$(pwd)
 gsettings set org.gnome.desktop.background picture-uri file:///$DIR/configs/gnome-wallpaper.jpg
 
-# Grub color 
+# Grub color
 sudo cp ./configs/grub-color-config /usr/share/plymouth/themes/default.grub
 sudo update-grub
 
 # GNOME Extensions
 sudo apt-get install chrome-gnome-shell
 
-
-
+./gnome-extension-install install alternate-tab@gnome-shell-extensions.gcampax.github.com
+./gnome-extension-install install apps-menu@gnome-shell-extensions.gcampax.github.com
+./gnome-extension-install install auto-move-windows@gnome-shell-extensions.gcampax.github.com
+./gnome-extension-install install desktop-scroller@brorlandi
+./gnome-extension-install install freon@UshakovVasilii_Github.yahoo.com
+./gnome-extension-install install mediaplayer@patapon.info
+./gnome-extension-install install native-window-placement@gnome-shell-extensions.gcampax.github.com
+./gnome-extension-install install screenshot-window-sizer@gnome-shell-extensions.gcampax.github.com
+./gnome-extension-install install topIcons@adel.gadllah@gmail.com

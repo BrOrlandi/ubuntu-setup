@@ -58,15 +58,24 @@ sudo apt-get install chrome-gnome-shell
 echo "Logout and login again to reload GNOME Shell with Extensions"
 
 
-# Spotify
+# Spotify repo
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt update
-sudo apt -y install spotify-client
 
+# VS Code repo
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
+# APT UPDATE 
+
+sudo apt update
+
+# Spotify
+sudo apt install -y spotify-client
 
 # VS Code
-
+sudo apt install -y code
 
 # VS Code Extensions
 
